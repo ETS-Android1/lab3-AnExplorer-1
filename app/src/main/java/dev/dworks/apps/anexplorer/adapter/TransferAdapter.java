@@ -142,7 +142,7 @@ public class TransferAdapter extends ArrayRecyclerAdapter<TransferStatus, ViewHo
             mState = itemView.findViewById(R.id.state);
             mProgress = itemView.findViewById(android.R.id.progress);
             mBytes = itemView.findViewById(android.R.id.summary);
-            mStop = itemView.findViewById(R.id.action);
+            mStop = itemView.findViewById(R.id.action1);
 
             // mStop.setIcon(R.drawable.ic_action_stop);
             mStop.setText(R.string.adapter_transfer_stop);
@@ -230,7 +230,7 @@ public class TransferAdapter extends ArrayRecyclerAdapter<TransferStatus, ViewHo
             ImageView icon = itemView.findViewById(android.R.id.icon);
             icon.setImageDrawable(IconUtils.applyTint(itemView.getContext(), R.drawable.ic_root_transfer, Color.WHITE));
             status = (TextView) itemView.findViewById(R.id.status);
-            action = (Button) itemView.findViewById(R.id.action);
+            action = (Button) itemView.findViewById(R.id.action1);
             action.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

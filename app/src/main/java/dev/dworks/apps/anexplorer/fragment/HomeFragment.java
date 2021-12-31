@@ -63,8 +63,6 @@ import dev.dworks.apps.anexplorer.model.DocumentsContract;
 import dev.dworks.apps.anexplorer.model.RootInfo;
 import dev.dworks.apps.anexplorer.provider.AppsProvider;
 import dev.dworks.apps.anexplorer.setting.SettingsActivity;
-import needle.Needle;
-import needle.UiRelatedTask;
 
 import static dev.dworks.apps.anexplorer.BaseActivity.State.MODE_GRID;
 import static dev.dworks.apps.anexplorer.DocumentsApplication.isTelevision;
@@ -288,7 +286,7 @@ public class HomeFragment extends RecyclerFragment implements HomeAdapter.OnItem
                 openRoot(activity, roots.getRecentsRoot(), mHomeRoot);
                 break;
 
-            case R.id.action:
+            case R.id.action1:
                 Bundle params = new Bundle();
                 if(item.commonInfo.rootInfo.isAppProcess()) {
                     cleanRAM();

@@ -2,8 +2,6 @@ package dev.dworks.apps.anexplorer.adapter;
 
 import android.app.Activity;
 import android.database.Cursor;
-import android.text.TextUtils;
-import android.text.format.Formatter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -159,7 +157,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
             summary = (TextView) v.findViewById(android.R.id.summary);
             progress = (NumberProgressBar) v.findViewById(android.R.id.progress);
             action_layout = v.findViewById(R.id.action_layout);
-            action = (ImageButton) v.findViewById(R.id.action);
+            action = (ImageButton) v.findViewById(R.id.action1);
 
             iconMime = (ImageView) v.findViewById(R.id.icon_mime);
             iconThumb = (ImageView) v.findViewById(R.id.icon_thumb);

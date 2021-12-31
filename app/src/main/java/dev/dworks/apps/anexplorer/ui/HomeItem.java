@@ -58,7 +58,7 @@ public class HomeItem extends FrameLayout {
         progress = (NumberProgressBar) findViewById(android.R.id.progress);
 
         action_layout = findViewById(R.id.action_layout);
-        action = (ImageButton) findViewById(R.id.action);
+        action = (ImageButton) findViewById(R.id.action1);
     }
 
     public void setInfo(RootInfo root) {

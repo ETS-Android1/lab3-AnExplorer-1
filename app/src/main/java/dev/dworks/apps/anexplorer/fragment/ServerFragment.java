@@ -20,11 +20,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.loader.app.LoaderManager;
 
 import dev.dworks.apps.anexplorer.BuildConfig;
 import dev.dworks.apps.anexplorer.R;
-import dev.dworks.apps.anexplorer.ShareDeviceActivity;
 import dev.dworks.apps.anexplorer.common.BaseFragment;
 import dev.dworks.apps.anexplorer.misc.ConnectionUtils;
 import dev.dworks.apps.anexplorer.misc.IconUtils;
@@ -93,7 +91,7 @@ public class ServerFragment extends BaseFragment implements View.OnClickListener
         address.setTextColor(SettingsActivity.getAccentColor());
         address.setHighlightColor(SettingsActivity.getPrimaryColor());
         warning = (TextView) view.findViewById(R.id.warning);
-        action = (Button) view.findViewById(R.id.action);
+        action = (Button) view.findViewById(R.id.action1);
         action.setOnClickListener(this);
     }
 
@@ -203,7 +201,7 @@ public class ServerFragment extends BaseFragment implements View.OnClickListener
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.action:
+            case R.id.action1:
                 if(!ConnectionUtils.isServerRunning(getActivity())){
                     if(ConnectionUtils.isConnectedToLocalNetwork(getActivity()))
                         startServer();
